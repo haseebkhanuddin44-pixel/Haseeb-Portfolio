@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Haseeb Khan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="container">
+            <h1 class="section-title">My <span class="highlight">Projects</span></h1>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/project1.svg" alt="E-commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with product filtering, user authentication, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/project2.svg" alt="Fitness Tracker App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application that helps users track their workouts, set goals, and monitor their progress over time.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="images/project3.svg" alt="Dashboard UI Design">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard UI Design</h3>
+                        <p>A modern and intuitive dashboard interface designed for a data analytics platform.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">Adobe XD</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/project1.svg" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my projects, skills, and experience.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/project2.svg" alt="Weather App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A mobile application that provides real-time weather forecasts based on user location.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Dart</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="images/project3.svg" alt="E-learning Platform Design">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-learning Platform Design</h3>
+                        <p>A comprehensive UI/UX design for an online learning platform with course management and student tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Sketch</span>
+                            <span class="project-tag">Prototyping</span>
+                            <span class="project-tag">User Research</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2023 Haseeb Khan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot-container">
+        <div class="chat-bot-button">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="chat-bot-window">
+            <div class="chat-bot-header">
+                <h3>Chat Assistant</h3>
+                <div class="chat-bot-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="chat-bot-messages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <!-- Chat Bot JS -->
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
